@@ -5,12 +5,16 @@ import {
   StyleSheet
 } from 'react-native';
 
-
+import Simples from './components/Simples'
+import ParImpar from './components/ParImpar'
 
 const App = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.f20}>TESTE</Text>
+      <Simples texto= "Texto por props"/>
+      <ParImpar numero={3}/>
+      <ParImpar numero={2}/>
     </View>
   );
 };
